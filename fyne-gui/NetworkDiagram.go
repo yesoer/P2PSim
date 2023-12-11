@@ -190,12 +190,12 @@ func (networkDiag *NetworkDiagram) refreshNodes(
 		// initial pass
 		diagWidth := diag.Size().Width
 		if diagWidth == 0 {
-			diagWidth = 800
+			diagWidth = InitialWindowSize.Width
 		}
 
 		diagHeight := diag.Size().Height
 		if diagHeight == 0 {
-			diagHeight = 1200
+			diagHeight = InitialWindowSize.Height
 		}
 
 		ratiow := diagWidth / 100
